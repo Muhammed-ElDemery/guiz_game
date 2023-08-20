@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cairo , sans-serif;
+}
+:root {
+    --red-color:#ff68de;
+}
+.parent {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(to right , #ff6868 , #ff68de);
+}
+.parent .container {
+    padding: 20px;
+    width: 60%;
+    background: linear-gradient(to right, #fff , #eee);
+    border-radius: 20px;
+    font-weight: bold;
+}
+.parent .container .heading{
+    font-size: 20px;
+    color: var(--red-color);
+}
+.parent .container .question-box {
+    background-color: rgba(204, 204, 204, 0.507);
+    padding: 20px;
+    border-radius: 20px;
+}
+.parent .container .question-box .box {
+    margin: 15px 0;
+}
+.parent .container .question-box form input[type="radio"] {
+    width: 40px;
+    height: 20px;
+}
+.parent .container .question-box label {
+    color: #14202e;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.parent .container .submit {
+    width: 100%;
+    background: var(--red-color);
+    color: white;
+    margin: 20px 0;
+    padding: 10px;
+    border: none;
+    font-size: 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.parent .container .submit:hover {
+    background: peachpuff;
+    color: #ff6868;
+} 
+.parent .container .progress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(204, 204, 204, 0.5);
+    border-radius: 20px;
+    margin: 15px 0;
+}
+.parent .container .progress .levels {
+    display: flex;
+    align-items: center;
+}
+.parent .container .progress span {
+    display:block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff6868;
+    border-radius: 100%;
+    margin-right:3px ;
+}
+.parent .container .progress span.active , .parent .container .progress span:first-child {
+    background: #ff6868;
+}
+.parent .container .progress .time p {
+    font-weight: bold;
+    padding: 5px 10px;
+    background: var(--red-color);
+    color: white;
+    border-radius: 5px;
+    letter-spacing: 4px;
+}
